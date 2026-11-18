@@ -1,0 +1,167 @@
+[
+  {
+    "id": "garden_farming",
+    "name": "Garden farming (Nether Wart)",
+    "description": "Farm crops in the Garden and sell enchanted crops on the Bazaar.",
+    "tips": "Swap to the crop your best Garden tool is built for, and keep Visitors running for extra copper/coins.",
+    "baseline": 900000,
+    "flatPerHour": 0,
+    "items": [ { "id": "ENCHANTED_NETHER_STALK", "perHour": 600 } ],
+    "requirements": { "skills": { "farming": 20 } },
+    "gearTiers": [
+      { "label": "Garden farming tool", "anyOf": ["THEORETICAL_HOE_*", "COCO_CHOPPER", "CACTUS_KNIFE", "FUNGI_CUTTER", "MELON_DICER*", "PUMPKIN_DICER*"], "mult": 1.3 },
+      { "label": "Fermento armor", "anyOf": ["FERMENTO_*"], "mult": 1.7 }
+    ]
+  },
+  {
+    "id": "mining_dwarven",
+    "name": "Dwarven Mines (Mithril & Titanium)",
+    "description": "Mine mithril and titanium, sell the enchanted forms on the Bazaar.",
+    "tips": "Use Mining Speed Boost and Commissions for extra Powder and rewards.",
+    "baseline": 600000,
+    "flatPerHour": 0,
+    "items": [
+      { "id": "ENCHANTED_MITHRIL", "perHour": 250 },
+      { "id": "ENCHANTED_TITANIUM", "perHour": 40 }
+    ],
+    "requirements": { "skills": { "mining": 15 } },
+    "gearTiers": [
+      { "label": "Mithril drill / Titanium pickaxe", "anyOf": ["MITHRIL_DRILL*", "TITANIUM_PICKAXE"], "mult": 1.3 },
+      { "label": "Titanium drill", "anyOf": ["TITANIUM_DRILL*"], "mult": 1.7 },
+      { "label": "Divan's Drill", "anyOf": ["DIVAN_DRILL"], "mult": 2.4 }
+    ]
+  },
+  {
+    "id": "mining_hollows",
+    "name": "Crystal Hollows (Gemstones)",
+    "description": "Mine gemstone crystals and sell the refined gems.",
+    "tips": "Gemstone Mining Speed and Mining Fortune matter more than raw damage here.",
+    "baseline": 1500000,
+    "flatPerHour": 0,
+    "requirements": {
+      "skills": { "mining": 24 },
+      "anyOfItems": ["MITHRIL_DRILL*", "TITANIUM_DRILL*", "DIVAN_DRILL", "GEMSTONE_GAUNTLET", "PICKONIMBUS"]
+    },
+    "gearTiers": [
+      { "label": "Divan's Drill", "anyOf": ["DIVAN_DRILL"], "mult": 1.5 },
+      { "label": "Gemstone Gauntlet", "anyOf": ["GEMSTONE_GAUNTLET"], "mult": 2.0 }
+    ]
+  },
+  {
+    "id": "dungeons_f5_f6",
+    "name": "Catacombs Floors 5-6",
+    "description": "Repeat mid-floor dungeon runs for chest profit.",
+    "tips": "Buy the chests with the best expected loot and use Dungeon Chest Keys wisely.",
+    "baseline": 700000,
+    "flatPerHour": 0,
+    "requirements": { "catacombs": 18, "skills": { "combat": 20 } },
+    "gearTiers": [
+      { "label": "Shadow Assassin / Adaptive armor", "anyOf": ["SHADOW_ASSASSIN_*", "ADAPTIVE_*"], "mult": 1.2 },
+      { "label": "Dungeon weapon", "anyOf": ["LIVID_DAGGER", "SHADOW_FURY", "FLOWER_OF_TRUTH"], "mult": 1.3 }
+    ]
+  },
+  {
+    "id": "dungeons_f7",
+    "name": "Catacombs Floor 7",
+    "description": "Farm Floor 7 for Wither essence and Necron-tier drops.",
+    "tips": "Skipping to a fast clear time matters more than perfect scores for profit/hour.",
+    "baseline": 2000000,
+    "flatPerHour": 0,
+    "requirements": { "catacombs": 24 },
+    "gearTiers": [
+      { "label": "Valkyrie / Astraea / Scylla", "anyOf": ["VALKYRIE", "ASTRAEA", "SCYLLA"], "mult": 1.3 },
+      { "label": "Necron-tier armor", "anyOf": ["NECRON_*", "STORM_*", "GOLDOR_*", "MAXOR_*"], "mult": 1.5 },
+      { "label": "Hyperion", "anyOf": ["HYPERION"], "mult": 1.6 },
+      { "label": "Terminator", "anyOf": ["TERMINATOR"], "mult": 1.7 }
+    ]
+  },
+  {
+    "id": "dungeons_master",
+    "name": "Master Mode runs (M5-M7)",
+    "description": "High-end dungeon runs with the best chest loot in the game.",
+    "tips": "Run with a consistent party; a failed run costs more than a slow one.",
+    "baseline": 4000000,
+    "flatPerHour": 0,
+    "requirements": {
+      "catacombs": 30,
+      "anyOfItems": ["HYPERION", "TERMINATOR", "VALKYRIE", "ASTRAEA", "SCYLLA", "NECRON_*", "STORM_*", "GOLDOR_*", "MAXOR_*"]
+    },
+    "gearTiers": [
+      { "label": "Hyperion / Terminator", "anyOf": ["HYPERION", "TERMINATOR"], "mult": 1.3 }
+    ]
+  },
+  {
+    "id": "kuudra",
+    "name": "Kuudra (Infernal)",
+    "description": "Defeat Kuudra for teeth, essence and Crimson Isle armor drops.",
+    "tips": "Learn the supply routes; fast, clean runs are what make this profitable.",
+    "baseline": 2500000,
+    "flatPerHour": 0,
+    "requirements": { "skills": { "combat": 28 } },
+    "gearTiers": [
+      { "label": "Crimson Isle armor", "anyOf": ["CRIMSON_*", "TERROR_*", "AURORA_*", "HOLLOW_*", "FERVOR_*"], "mult": 1.4 },
+      { "label": "Endgame weapon", "anyOf": ["HYPERION", "TERMINATOR", "SCYLLA"], "mult": 1.3 }
+    ]
+  },
+  {
+    "id": "slayer_revenant",
+    "name": "Revenant Horror slayer (T4/T5)",
+    "description": "Run zombie slayers and sell the drops.",
+    "tips": "Higher tiers pay far better per hour once you can kill the boss reliably.",
+    "baseline": 1000000,
+    "flatPerHour": 0,
+    "requirements": { "slayers": { "zombie": 5 }, "skills": { "combat": 24 } },
+    "gearTiers": [
+      { "label": "Revenant Sword / Reaper Falchion", "anyOf": ["REVENANT_SWORD", "REAPER_FALCHION"], "mult": 1.2 },
+      { "label": "Reaper Scythe / endgame weapon", "anyOf": ["REAPER_SCYTHE", "HYPERION", "ASTRAEA", "SCYLLA", "VALKYRIE"], "mult": 1.5 }
+    ]
+  },
+  {
+    "id": "slayer_enderman",
+    "name": "Voidgloom Seraph slayer (T4)",
+    "description": "Run enderman slayers in the End and sell the drops.",
+    "tips": "Bring a Katana-class weapon; the fight is all about burst damage.",
+    "baseline": 2000000,
+    "flatPerHour": 0,
+    "requirements": { "slayers": { "enderman": 6 }, "skills": { "combat": 28 } },
+    "gearTiers": [
+      { "label": "Katana", "anyOf": ["ATOMSPLIT_KATANA", "VOIDEDGE_KATANA", "VOIDWALKER_KATANA"], "mult": 1.3 },
+      { "label": "Final Destination armor", "anyOf": ["FINAL_DESTINATION_*"], "mult": 1.5 }
+    ]
+  },
+  {
+    "id": "fishing_crimson",
+    "name": "Crimson Isle / Magma Fields fishing",
+    "description": "Fish lava creatures and sell their drops.",
+    "tips": "Sea Creature Chance and Fishing Speed are the stats to stack.",
+    "baseline": 800000,
+    "flatPerHour": 0,
+    "requirements": { "skills": { "fishing": 25 } },
+    "gearTiers": [
+      { "label": "Magma / Inferno / Hellfire rod", "anyOf": ["MAGMA_ROD", "INFERNO_ROD", "HELLFIRE_ROD"], "mult": 1.3 },
+      { "label": "The Shredder", "anyOf": ["THE_SHREDDER", "SHREDDER"], "mult": 1.6 }
+    ]
+  },
+  {
+    "id": "foraging_galatea",
+    "name": "Foraging (Galatea / Park)",
+    "description": "Chop high-tier logs and sell the enchanted forms.",
+    "tips": "Treecapitator-style axes multiply how many logs you collect per swing.",
+    "baseline": 700000,
+    "flatPerHour": 0,
+    "requirements": { "skills": { "foraging": 25 } },
+    "gearTiers": [
+      { "label": "Treecapitator", "anyOf": ["TREECAPITATOR_AXE"], "mult": 1.2 },
+      { "label": "Jungle Axe", "anyOf": ["JUNGLE_AXE"], "mult": 1.1 }
+    ]
+  },
+  {
+    "id": "market_flipping",
+    "name": "Bazaar & Auction House flipping",
+    "description": "Buy low, sell high. Not gear-dependent, but needs starting capital.",
+    "tips": "Spread your coins across several items and never tie up everything in one flip.",
+    "baseline": 1200000,
+    "flatPerHour": 0,
+    "requirements": { "minCoins": 3000000 }
+  }
+]
